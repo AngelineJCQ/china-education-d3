@@ -16,7 +16,7 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
 
-    const colorScale = d3.scaleOrdinal().range(d3.schemeDark2)
+    const colorScale = d3.scaleOrdinal().range(["#dd383d","#efd046",  "#a0d0de"])
     const xPositionScale = d3.scaleTime().range([0, width])
     const yPositionScale = d3.scaleLinear().range([height, 0])
     const parseDate = d3.timeParse("%Y")
@@ -76,8 +76,9 @@
             // console.log(label);
         
         mark = svg.append('line')
-            .style("stroke", "lightgreen")
+            .style("stroke", "#6595cb")
             .style("stroke-width", 3)
+            .style("stroke-dasharray", 5)
             .attr("x1", xPositionScale(parseDate(1998)))
             .attr("y1", yPositionScale(0))
             .attr("x2", xPositionScale(parseDate(1998)))

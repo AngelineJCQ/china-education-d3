@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:#d9e2e3;
+    background-color:#e6ebe2;
 }
 
 img {
@@ -27,6 +27,7 @@ img {
 .chart-container {
     max-width: 900px;
     margin: 0px auto;
+    padding-top: 20px;
 
 }
 
@@ -91,10 +92,30 @@ h1 {
     line-height: 30px;
 }
 
+.chart-container p {
+    margin-top: 20px;
+    font-size: large;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.red {
+    text-decoration: underline double #dd383d;
+    text-underline-position: under;
+
+}
+
+.yellow {
+    text-decoration: underline double #efd046;
+    text-underline-position: under;
+
+}
+
 a:link, a:visited {
-    color: #063554;
+    color: #11669e;
     text-decoration: underline;
-    cursor: auto;
+    cursor: pointer;
   }
   
   a:link:active, a:visited:active {

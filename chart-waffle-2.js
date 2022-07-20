@@ -5,7 +5,7 @@ var data2 = [
   ]
   
   var domain = data2.map(function(d){ return slugify(d.name); })
-  var range = ["#c7d4b6", "#a3aabd", "#a0d0de", "#97b5cf"]
+  var range = ["#dd383d","#efd046",  "#a0d0de"]
   var palette = d3.scale.ordinal().domain(domain).range(range);
 
 
